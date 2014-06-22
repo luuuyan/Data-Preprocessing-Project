@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=9" >
 
-<title>CodeBook</title>
+<title>README</title>
 
 <style type="text/css">
 body, td {
@@ -179,141 +179,66 @@ hljs.initHighlightingOnLoad();
 </head>
 
 <body>
-<h1>CodeBook</h1>
+<h1>README</h1>
 
-<h2>AcitivityRecogn.txt</h2>
+<p>Creator: Luyan Wu</p>
 
-<p>AcitivityRecogn.txt contains a tidy dataset of <strong>means</strong> and <strong>stds</strong> of measurements extracted from <strong>Human Activity Recognition Using Smartphones dataset</strong>, which is available from <strong><a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip</a></strong>. More information of the original dataset can be found at <strong><a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones</a></strong>.</p>
+<p>Discription: project for Getting and Clearning Data course</p>
 
-<p>There are <strong>10299</strong> observations in total. The <strong>1-7352th</strong> observations are the training data, while the <strong>7353-10299th</strong> observations are the test data.</p>
+<h2>Files</h2>
 
-<p>The dataset contains <strong>68</strong> variables. The <strong>1-66th</strong> variables are <strong>means</strong> and <strong>stds</strong> of measurements extracted from <strong>x.train</strong> and <strong>x.test</strong>. These are all <strong>numeric</strong> variables. </p>
+<p>This repository contains the following files:</p>
 
-<p>The <strong>67th</strong> variable is the <strong>subject</strong> extracted from <strong>subject.train</strong> and <strong>subject.test</strong>, which is an <strong>integer</strong> variable. </p>
+<h3>Documents:</h3>
 
-<p>The <strong>68th</strong> variable is the <strong>Activity</strong> variable extracted from <strong>y.train</strong> and <strong>y.test</strong>. It is a <strong>factor</strong> variable with <strong>6</strong> levels.</p>
+<ul>
+<li>README.html (Important)</li>
+<li>README.md (required)</li>
+<li>README.Rmd</li>
+<li>CodeBook.html (Important)</li>
+<li>CodeBook.md (required)</li>
+<li>CodeBook.Rmd</li>
+</ul>
 
-<p>The name of the variables are:</p>
+<h3>Datasets:</h3>
 
-<pre><code>##  [1] &quot;tBodyAcc-Mean-X&quot;           &quot;tBodyAcc-Mean-Y&quot;          
-##  [3] &quot;tBodyAcc-Mean-Z&quot;           &quot;tBodyAcc-Std-X&quot;           
-##  [5] &quot;tBodyAcc-Std-Y&quot;            &quot;tBodyAcc-Std-Z&quot;           
-##  [7] &quot;tGravityAcc-Mean-X&quot;        &quot;tGravityAcc-Mean-Y&quot;       
-##  [9] &quot;tGravityAcc-Mean-Z&quot;        &quot;tGravityAcc-Std-X&quot;        
-## [11] &quot;tGravityAcc-Std-Y&quot;         &quot;tGravityAcc-Std-Z&quot;        
-## [13] &quot;tBodyAccJerk-Mean-X&quot;       &quot;tBodyAccJerk-Mean-Y&quot;      
-## [15] &quot;tBodyAccJerk-Mean-Z&quot;       &quot;tBodyAccJerk-Std-X&quot;       
-## [17] &quot;tBodyAccJerk-Std-Y&quot;        &quot;tBodyAccJerk-Std-Z&quot;       
-## [19] &quot;tBodyGyro-Mean-X&quot;          &quot;tBodyGyro-Mean-Y&quot;         
-## [21] &quot;tBodyGyro-Mean-Z&quot;          &quot;tBodyGyro-Std-X&quot;          
-## [23] &quot;tBodyGyro-Std-Y&quot;           &quot;tBodyGyro-Std-Z&quot;          
-## [25] &quot;tBodyGyroJerk-Mean-X&quot;      &quot;tBodyGyroJerk-Mean-Y&quot;     
-## [27] &quot;tBodyGyroJerk-Mean-Z&quot;      &quot;tBodyGyroJerk-Std-X&quot;      
-## [29] &quot;tBodyGyroJerk-Std-Y&quot;       &quot;tBodyGyroJerk-Std-Z&quot;      
-## [31] &quot;tBodyAccMag-Mean&quot;          &quot;tBodyAccMag-Std&quot;          
-## [33] &quot;tGravityAccMag-Mean&quot;       &quot;tGravityAccMag-Std&quot;       
-## [35] &quot;tBodyAccJerkMag-Mean&quot;      &quot;tBodyAccJerkMag-Std&quot;      
-## [37] &quot;tBodyGyroMag-Mean&quot;         &quot;tBodyGyroMag-Std&quot;         
-## [39] &quot;tBodyGyroJerkMag-Mean&quot;     &quot;tBodyGyroJerkMag-Std&quot;     
-## [41] &quot;fBodyAcc-Mean-X&quot;           &quot;fBodyAcc-Mean-Y&quot;          
-## [43] &quot;fBodyAcc-Mean-Z&quot;           &quot;fBodyAcc-Std-X&quot;           
-## [45] &quot;fBodyAcc-Std-Y&quot;            &quot;fBodyAcc-Std-Z&quot;           
-## [47] &quot;fBodyAccJerk-Mean-X&quot;       &quot;fBodyAccJerk-Mean-Y&quot;      
-## [49] &quot;fBodyAccJerk-Mean-Z&quot;       &quot;fBodyAccJerk-Std-X&quot;       
-## [51] &quot;fBodyAccJerk-Std-Y&quot;        &quot;fBodyAccJerk-Std-Z&quot;       
-## [53] &quot;fBodyGyro-Mean-X&quot;          &quot;fBodyGyro-Mean-Y&quot;         
-## [55] &quot;fBodyGyro-Mean-Z&quot;          &quot;fBodyGyro-Std-X&quot;          
-## [57] &quot;fBodyGyro-Std-Y&quot;           &quot;fBodyGyro-Std-Z&quot;          
-## [59] &quot;fBodyAccMag-Mean&quot;          &quot;fBodyAccMag-Std&quot;          
-## [61] &quot;fBodyBodyAccJerkMag-Mean&quot;  &quot;fBodyBodyAccJerkMag-Std&quot;  
-## [63] &quot;fBodyBodyGyroMag-Mean&quot;     &quot;fBodyBodyGyroMag-Std&quot;     
-## [65] &quot;fBodyBodyGyroJerkMag-Mean&quot; &quot;fBodyBodyGyroJerkMag-Std&quot; 
-## [67] &quot;Subject&quot;                   &quot;Activity&quot;
-</code></pre>
+<ul>
+<li>/UCI HAR Dataset (original dataset)</li>
+<li>ActivityRecogn.txt (tidy dataset containing means and stds)</li>
+<li>Avg_Of_ActivityRecogn.txt (tidy dataset containing average of means and stds)</li>
+</ul>
 
-<p>Note: when <strong>AcitivityRecogn.txt</strong> is loaded, the <strong>-</strong> in the variable names may become <strong>.</strong> due to system issue.</p>
+<h3>R file:</h3>
 
-<p>The levels of <strong>Activity</strong> is:</p>
+<ul>
+<li>run_analysis.R (all the R code for cleaning the data)</li>
+</ul>
 
-<pre><code class="r">1 WALKING
-2 WALKING_UPSTAIRS
-3 WALKING_DOWNSTAIRS
-4 SITTING
-5 STANDING
-6 LAYING
-</code></pre>
+<h3>Other non-relevant files:</h3>
 
-<p>The data can be loaded using the following command:</p>
+<ul>
+<li>.DS_Store</li>
+<li>features copy.txt</li>
+<li>getdata-projectfiles-UCI HAR Dataset.zip</li>
+</ul>
+
+<h2>Instruction</h2>
+
+<p>Run <strong>run_analysis.R</strong>, it will create and save 2 datasets seperately in ActivityRecogn.txt and Avg_Of_ActivityRecogn.txt. The datasets can then be loaded using the following command in R:</p>
 
 <pre><code class="r">mydata &lt;- read.table(&quot;./AcitivityRecogn.txt&quot;, header=TRUE)
+mystatistics &lt;- read.table(&quot;./Avg_Of_AcitivityRecogn.txt&quot;, header=TRUE)
 </code></pre>
 
-<h2>Avg_Of_AcitivityRecogn.txt</h2>
+<h2>Steps for data processing</h2>
 
-<p>Avg_Of_AcitivityRecogn.txt contains a tidy dataset of <strong>average</strong> of <strong>means</strong> and <strong>stds</strong> of measurements extracted from <strong>AcitivityRecogn dataset</strong>.</p>
-
-<p>There are <strong>180</strong> observations in total. Each observation corresponds to the average of each variable for each activity and each subject.</p>
-
-<p>The dataset contains <strong>68</strong> variables. The <strong>1-66th</strong> variables are <strong>average</strong> of <strong>means</strong> and <strong>stds</strong> of measurements. These are all <strong>numeric</strong> variables. </p>
-
-<p>The <strong>67th</strong> variable is the <strong>subject</strong> varies from <strong>1 to 30</strong>, which is an <strong>integer</strong> variable. </p>
-
-<p>The <strong>68th</strong> variable is the <strong>Activity</strong> variable. It is a <strong>factor</strong> variable with <strong>6</strong> levels.</p>
-
-<p>The name of the variables are:</p>
-
-<pre><code>##  [1] &quot;Avg_Of_tBodyAcc-Mean-X&quot;       &quot;Avg_Of_tBodyAcc-Mean-Y&quot;      
-##  [3] &quot;Avg_Of_tBodyAcc-Mean-Z&quot;       &quot;Avg_Of_tBodyAcc-Std-X&quot;       
-##  [5] &quot;Avg_Of_tBodyAcc-Std-Y&quot;        &quot;Avg_Of_tBodyAcc-Std-Z&quot;       
-##  [7] &quot;Avg_Of_tGravityAcc-Mean-X&quot;    &quot;Avg_Of_tGravityAcc-Mean-Y&quot;   
-##  [9] &quot;Avg_Of_tGravityAcc-Mean-Z&quot;    &quot;Avg_Of_tGravityAcc-Std-X&quot;    
-## [11] &quot;Avg_Of_tGravityAcc-Std-Y&quot;     &quot;Avg_Of_tGravityAcc-Std-Z&quot;    
-## [13] &quot;Avg_Of_tBodyAccJerk-Mean-X&quot;   &quot;Avg_Of_tBodyAccJerk-Mean-Y&quot;  
-## [15] &quot;Avg_Of_tBodyAccJerk-Mean-Z&quot;   &quot;Avg_Of_tBodyAccJerk-Std-X&quot;   
-## [17] &quot;Avg_Of_tBodyAccJerk-Std-Y&quot;    &quot;Avg_Of_tBodyAccJerk-Std-Z&quot;   
-## [19] &quot;Avg_Of_tBodyGyro-Mean-X&quot;      &quot;Avg_Of_tBodyGyro-Mean-Y&quot;     
-## [21] &quot;Avg_Of_tBodyGyro-Mean-Z&quot;      &quot;Avg_Of_tBodyGyro-Std-X&quot;      
-## [23] &quot;Avg_Of_tBodyGyro-Std-Y&quot;       &quot;Avg_Of_tBodyGyro-Std-Z&quot;      
-## [25] &quot;Avg_Of_tBodyGyroJerk-Mean-X&quot;  &quot;Avg_Of_tBodyGyroJerk-Mean-Y&quot; 
-## [27] &quot;Avg_Of_tBodyGyroJerk-Mean-Z&quot;  &quot;Avg_Of_tBodyGyroJerk-Std-X&quot;  
-## [29] &quot;Avg_Of_tBodyGyroJerk-Std-Y&quot;   &quot;Avg_Of_tBodyGyroJerk-Std-Z&quot;  
-## [31] &quot;Avg_Of_tBodyAccMag-Mean&quot;      &quot;Avg_Of_tBodyAccMag-Std&quot;      
-## [33] &quot;Avg_Of_tGravityAccMag-Mean&quot;   &quot;Avg_Of_tGravityAccMag-Std&quot;   
-## [35] &quot;Avg_Of_tBodyAccJerkMag-Mean&quot;  &quot;Avg_Of_tBodyAccJerkMag-Std&quot;  
-## [37] &quot;Avg_Of_tBodyGyroMag-Mean&quot;     &quot;Avg_Of_tBodyGyroMag-Std&quot;     
-## [39] &quot;Avg_Of_tBodyGyroJerkMag-Mean&quot; &quot;Avg_Of_tBodyGyroJerkMag-Std&quot; 
-## [41] &quot;Avg_Of_fBodyAcc-Mean-X&quot;       &quot;Avg_Of_fBodyAcc-Mean-Y&quot;      
-## [43] &quot;Avg_Of_fBodyAcc-Mean-Z&quot;       &quot;Avg_Of_fBodyAcc-Std-X&quot;       
-## [45] &quot;Avg_Of_fBodyAcc-Std-Y&quot;        &quot;Avg_Of_fBodyAcc-Std-Z&quot;       
-## [47] &quot;Avg_Of_fBodyAccJerk-Mean-X&quot;   &quot;Avg_Of_fBodyAccJerk-Mean-Y&quot;  
-## [49] &quot;Avg_Of_fBodyAccJerk-Mean-Z&quot;   &quot;Avg_Of_fBodyAccJerk-Std-X&quot;   
-## [51] &quot;Avg_Of_fBodyAccJerk-Std-Y&quot;    &quot;Avg_Of_fBodyAccJerk-Std-Z&quot;   
-## [53] &quot;Avg_Of_fBodyGyro-Mean-X&quot;      &quot;Avg_Of_fBodyGyro-Mean-Y&quot;     
-## [55] &quot;Avg_Of_fBodyGyro-Mean-Z&quot;      &quot;Avg_Of_fBodyGyro-Std-X&quot;      
-## [57] &quot;Avg_Of_fBodyGyro-Std-Y&quot;       &quot;Avg_Of_fBodyGyro-Std-Z&quot;      
-## [59] &quot;fBodyAccMag-Mean&quot;             &quot;fBodyAccMag-Std&quot;             
-## [61] &quot;fBodyBodyAccJerkMag-Mean&quot;     &quot;fBodyBodyAccJerkMag-Std&quot;     
-## [63] &quot;fBodyBodyGyroMag-Mean&quot;        &quot;fBodyBodyGyroMag-Std&quot;        
-## [65] &quot;fBodyBodyGyroJerkMag-Mean&quot;    &quot;fBodyBodyGyroJerkMag-Std&quot;    
-## [67] &quot;Subject&quot;                      &quot;Activity&quot;
-</code></pre>
-
-<p>Note: when <strong>Avg_Of_AcitivityRecogn.txt</strong> is loaded, the <strong>-</strong> in the variable names may become <strong>.</strong> due to system issue. But the <strong>_</strong> will not.</p>
-
-<p>The levels of <strong>Activity</strong> is:</p>
-
-<pre><code class="r">1 WALKING
-2 WALKING_UPSTAIRS
-3 WALKING_DOWNSTAIRS
-4 SITTING
-5 STANDING
-6 LAYING
-</code></pre>
-
-<p>The data can be loaded using the following command:</p>
-
-<pre><code class="r">mystatistics &lt;- read.table(&quot;./Avg_Of_AcitivityRecogn.txt&quot;, header=TRUE)
-</code></pre>
+<ol>
+<li>Merges the training and the test sets to create one data set. i.e. merge X.train and X.test to X, merge y.train and y.test to y, and merge subject.train and subject.test to subject</li>
+<li>Extracts only the measurements on the mean and standard deviation for each measurement. </li>
+<li>Uses descriptive activity names to name the activities in the data set</li>
+<li>Appropriately labels the data set with descriptive variable names. </li>
+<li>Creates a second, independent tidy data set with the average of each variable for each activity and each subject. </li>
+</ol>
 
 </body>
 

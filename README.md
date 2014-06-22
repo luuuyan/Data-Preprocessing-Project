@@ -41,7 +41,8 @@ Instruction
 
 Run **run_analysis.R**, it will create and save 2 datasets seperately in ActivityRecogn.txt and Avg_Of_ActivityRecogn.txt. The datasets can then be loaded using the following command in R:
 
-```{r,eval=FALSE}
+
+```r
 mydata <- read.table("./AcitivityRecogn.txt", header=TRUE)
 mystatistics <- read.table("./Avg_Of_AcitivityRecogn.txt", header=TRUE)
 ```

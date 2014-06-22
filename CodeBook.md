@@ -147,5 +147,5 @@ The data can be loaded using the following command:
 
 
 ```r
-mydata <- read.table("./Avg_Of_AcitivityRecogn.txt", header=TRUE)
+mystatistics <- read.table("./Avg_Of_AcitivityRecogn.txt", header=TRUE)
 ```
